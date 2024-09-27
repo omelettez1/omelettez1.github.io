@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Resume</title>
+    <link rel="stylesheet" href="css/style.css">
+    <style>
+        body {
+            margin: 0;
+            font-family: Arial, sans-serif;
+            background-color: #1a1a1a; /* เพิ่มพื้นหลัง */
+            color: antiquewhite; /* เปลี่ยนสีข้อความ */
+            
+        }
+        
+        table {
+            width: auto; /* ทำให้ตารางเต็มความกว้าง */
+            margin-top: 20px;
+            text-align: left;
+            
+        }
+        th, td {
+            padding: 10px;
+            border-collapse: collapse;
+        }
+        img {
+            max-width: 100%; /* ทำให้ภาพมีความกว้าง 100% */
+            height: auto; /* คงอัตราส่วนภาพ */
+        }
+        ul {
+            list-style: none;
+            padding: 0; /* ลบ padding */
+        }
+        @media (max-width: 600px) {
+            .topnav {
+                flex-direction: column; /* เปลี่ยนทิศทางให้เป็นคอลัมน์ */
+            }
+            table {
+                font-size: 14px; /* ปรับขนาดฟอนต์สำหรับหน้าจอเล็ก */
+            }
+            h1 {
+                font-size: 24px; /* ปรับขนาดหัวเรื่อง */
+            }
+        }
+    </style>
+</head>
+
+
+<body>
+    <div class="topnav">
+        <a href="index.html">Home</a>
+        <a class="active" href="personal information.html">Personal Information</a>
+        <a href="Education .html">Education</a>
+        <a href="Skill.html">Skill</a>
+    </div>
+    <img src="image/Knowledge_Is_Human_Homepage_Animated_Banner.gif" alt="">
+
+    <div class="container">
+        <div class="main-container">
+            <table align="center">
+                <colgroup>
+                    <col span="2" style="background-color: #070707">
+                    <col span="3" style="background-color: pink">
+                </colgroup>
+                <tr>
+                    <th><h1>My Personal Information</h1><img src="image/291686636_5016907005073438_5533484967841508653_n.jpg" width="400px" alt=""></th>
+                </tr>
+                <tr>
+                    <td>
+                        <ul>
+                            <li>Name: Nattanon Inkham</li>
+                            <li>Date of Birth: 11 June 2001</li>
+                            <li>Age: 23y</li>
+                            <li>Blood Type: B</li>
+                            <li>Nationality: Thai</li>
+                            <li>Weight: 94 Kg</li>
+                            <li>Height: 175 cm</li>
+                        </ul>
+                    </td>
+                </tr>
+            </table>
+        </div>
+    </div>
+</body>
+</html>

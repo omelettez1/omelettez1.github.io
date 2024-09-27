@@ -1,0 +1,125 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Resume</title>
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<style>
+  
+  h1
+  {
+    color: black;
+  }
+  
+  
+</style>
+
+<div class="topnav">
+  <a href="index.html">Home</a>
+  <a href="personal information.html">Personal Information</a>
+  <a href="Education .html">Education</a>
+  <a class="active" href="Skill.html">Skill</a>
+  
+</div>
+  <img src="image/Knowledge_Is_Human_Homepage_Animated_Banner.gif" alt="">
+<body>
+
+
+
+
+  <div class="tab">
+    <button class="tablinks" onclick="openCity(event, 'Program')" id="defaultOpen" >Program</button>
+    <button class="tablinks" onclick="openCity(event, 'Skill')">Skill</button>
+    
+  </div>
+
+
+  
+  <div id="Program" class="tabcontent">
+    <table border="0px" style="border-collapse: collapse;" width="50%">
+      <tr>
+        <th align="left" ><h1>My Program I can do</h1></th>
+      </tr>
+      <tr>
+        <td><h2>Program</h2></td>
+        <td><h2>Level</h2></td>
+      </tr>
+      <tr>
+        <td>Programmable Logic Contro (GX Work2)</td>
+        <td>Fair</td>
+      </tr>
+      <tr>
+        <td>Microcantroller (Arduino)</td>
+        <td>Good</td>
+      </tr>
+      <tr>
+        <td>Microsoft Office</td>
+        <td>Good</td>
+      </tr>
+      <tr>
+        <td>Excel</td>
+        <td>Good</td>
+      </tr>
+    </table>
+    
+  </div>
+
+
+
+
+  
+  <div id="Skill" class="tabcontent">
+    <table border="0px" style="border-collapse: collapse;" width="50%">
+      <tr>
+        <th align="left"><h1>My Skill</h1></th>
+        <tr>
+          <td><h2>Skill</h2></td>
+          <td><h2>Level</h2></td>
+        </tr>
+      </tr>
+      
+      <tr>
+        <td>English</td>
+        <td>Good</td>
+      </tr>
+      <tr>
+        <td>Electrical Skill (Soldering, Read & Write electrical circuit diagrams)</td>
+        <td>Fair</td>
+      </tr>
+      <tr>
+        <td>Disassembly skills (Three-Phases Motor)</td>
+        <td>Fair</td>
+      </tr>
+      <tr>
+        <td>Socializing Skill</td>
+        <td>Good</td>
+      </tr>
+    </table>
+  </div>
+
+
+
+
+    
+
+
+  <script>
+    function openCity(evt, cityName) {
+      var i, tabcontent, tablinks;
+      tabcontent = document.getElementsByClassName("tabcontent");
+      for (i = 0; i < tabcontent.length; i++) {
+        tabcontent[i].style.display = "none";
+      }
+      tablinks = document.getElementsByClassName("tablinks");
+      for (i = 0; i < tablinks.length; i++) {
+        tablinks[i].className = tablinks[i].className.replace(" active", "");
+      }
+      document.getElementById(cityName).style.display = "block";
+      evt.currentTarget.className += " active";
+    }
+    document.getElementById("defaultOpen").click();
+    </script>
+</body>
+</html>

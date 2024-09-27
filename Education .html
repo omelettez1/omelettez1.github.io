@@ -1,0 +1,139 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Resume</title>
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<style>
+  .accordion {
+  background-color: #eee;
+  color: #444;
+  cursor: pointer;
+  padding: 18px;
+  width: 100%;
+  border: none;
+  text-align: left;
+  outline: none;
+  font-size: 15px;
+  transition: 0.4s;
+}
+
+.active, .accordion:hover {
+  background-color: #ccc; 
+}
+
+.panel {
+  padding: 0 18px;
+  display: none;
+  background-color: white;
+  overflow: hidden;
+}
+table, th, td, tr
+    {
+        border: 0px solid black;
+        padding: 10px;
+        border-collapse: collapse;
+        color: antiquewhite;
+        table-layout: auto;
+        background-color: #eee;
+    }
+</style>
+<div class="topnav">
+    <a  href="index.html">Home</a>
+    <a href="personal information.html">Personal Information</a>
+    <a class="active" href="Education .html">Education</a>
+    <a href="Skill.html">Skill</a>
+  
+</div>
+<body>
+  <img src="image/Knowledge_Is_Human_Homepage_Animated_Banner.gif" alt="">
+  <table >
+    <th >
+      <h2 align="center" >My Education Record</h2>
+    </th>
+
+  </table>
+
+  <button class="accordion">Primary - Secondary level</button>
+  <div class="panel">
+    <div class="row">
+      <div class="column" style="background-color:#aaa;">
+        <img src="image/lower.png" height="100%" alt="">
+      </div>
+      <div class="column" style="background-color:#bbb;">
+        <h2>Primary - Secondary Education</h2>
+        <p>Poungkham School <br>
+          Grade 1-9 <br>
+          since 2008 - 2016 <br>
+        </p>
+      </div>
+    </div>
+  </div>
+
+
+
+
+  <button class="accordion">Vocational Certificate</button>
+  <div class="panel">
+    <div class="row">
+      <div class="column" style="background-color:#aaa;">
+        <img src="image/Voca.png" height="100%" alt="">
+      </div>
+      <div class="column" style="background-color:#bbb;">
+        <h2>Vocational Certificate</h2>
+        <p> Aranyaprathet School <br>
+          Grade 10 - 12 <br>
+          since 2016 - 2019
+        </p>
+      </div>
+    </div>
+  </div>
+  
+
+
+
+
+  <button class="accordion">University</button>
+  <div class="panel">
+    <div class="column" style="background-color:#aaa;">
+      <img src="image/uni.jpg" height="100%" alt="">
+    </div>
+    <div class="column" style="background-color:#bbb;">
+      <h2>University</h2>
+      <p> King Mongkut's University of Technology North Bangkok<br>
+        Bachelor Degrees <br>
+        since 2019 - Present
+
+    
+  </div>
+
+
+
+
+
+
+
+
+
+
+
+  <script>
+    var acc = document.getElementsByClassName("accordion");
+    var i;
+    
+    for (i = 0; i < acc.length; i++) {
+      acc[i].addEventListener("click", function() {
+        this.classList.toggle("active");
+        var panel = this.nextElementSibling;
+        if (panel.style.display === "block") {
+          panel.style.display = "none";
+        } else {
+          panel.style.display = "block";
+        }
+      });
+    }
+    </script>  
+</body>
+</html>
